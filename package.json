@@ -1,0 +1,36 @@
+{
+    "name": "@xso/trigger",
+    "version": "0.1.0",
+    "description": "Trigger global events of the XSO framework.",
+    "main": "./dist/xso-trigger.umd.js",
+    "module": "./dist/xso-trigger.es.js",
+    "exports": {
+        ".": {
+            "import": "./src/main.js",
+            "require": "./dist/xso-trigger.umd.js"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Eduardo Velasques",
+    "license": "MIT",
+    "repository": "xsojs/trigger",
+    "keywords": [
+        "xso",
+        "xsojs"
+    ],
+    "dependencies": {
+        "@xso/utils": "^0.1.0"
+    },
+    "devDependencies": {
+        "vite": "^4.3.9"
+    },
+    "files": [
+        "dist",
+        "src"
+    ]
+}
