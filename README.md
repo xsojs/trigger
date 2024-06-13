@@ -124,13 +124,24 @@ window.setTimeout(()=> {
 Here is an integration directly in the raw HTML with pure JavaScript, like this:
 
 ```html
-<script src="https://raw.githubusercontent.com/xsojs/trigger/dist/xso-trigger.umd.js"></script>
+<!--
+Here is the bundle JS file to download:
+https://github.com/xsojs/trigger/blob/main/dist/xso-trigger.umd.js
+-->
+<script src="xso-trigger.umd.js"></script>
 
 <script>
 const ACTION_KEY = 'My-Action';
 // Append a function to the key:
 trigger.add(ACTION_KEY, (payload)=> {
-    console.log('Payload:', payload);
+    console.log(
+        `${ACTION_KEY} trigger payload:`,
+        payload
+    );
+});
+
+trigger.add(ACTION_KEY, (payload)=> {
+    alert('Trigger worked! See the payload in console log.');
 });
 
 // Execute the key with args:

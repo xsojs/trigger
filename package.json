@@ -1,6 +1,6 @@
 {
     "name": "@xso/trigger",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "Trigger global events of the XSO framework.",
     "main": "./dist/xso-trigger.umd.js",
     "module": "./dist/xso-trigger.es.js",
